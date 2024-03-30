@@ -11,10 +11,10 @@ public class Book {
 
     // Constructor, getters, setters
 
-    public Book(String title, String author, int yearOfPublication) {
+    public Book(String title, String author, int year) {
         this.title = title;
         this.author = author;
-        this.year = yearOfPublication;
+        this.year = year;
     }
 
     public String getTitle() {

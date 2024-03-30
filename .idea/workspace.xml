@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66993dd1-5631-4689-916c-83b9e7390751" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/login/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/login/controller/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/book/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/book/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bookList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,30 +59,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 10.1.20.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Program/InteliJ Ultimate/project/ASsignment-2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.20.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Program/InteliJ Ultimate/project/ASsignment-2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Program\InteliJ Ultimate\project\ASsignment-2" />
@@ -108,6 +108,8 @@
       </method>
     </configuration>
     <configuration name="Tomcat 10.1.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="ASsignment-2:war exploded">
@@ -118,6 +120,8 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="4f77e646-d77a-4966-851a-1aa356811734" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+        <option name="PRESERVE_SESSIONS" value="true" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -224,7 +228,8 @@
       <updated>1711806175344</updated>
       <workItem from="1711806176408" duration="83000" />
       <workItem from="1711806267538" duration="6556000" />
-      <workItem from="1711812863127" duration="814000" />
+      <workItem from="1711812863127" duration="968000" />
+      <workItem from="1711813852846" duration="805000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -242,7 +247,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711813131377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1711813723883</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711813723883</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1711813826600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711813826600</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
