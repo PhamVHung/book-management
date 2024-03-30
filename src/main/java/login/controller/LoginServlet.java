@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
             request.getRequestDispatcher("bookList.jsp").forward(request, response);
         } else {
             request.setAttribute("message", "Invalid username or password. Please try again.");
-            request.getRequestDispatcher("login.jsp?error=true").forward(request, response);
+            request.getRequestDispatcher("index.jsp?error=true").forward(request, response);
         }
     }
 }
